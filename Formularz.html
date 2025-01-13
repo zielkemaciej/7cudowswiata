@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="7 cudów świata">
+    <meta name="keywords" content="7 cudów, ankieta, historia">
+    <meta name="author" content="Zielke Maciej">
+    <link rel="stylesheet" href="style.css">
+    <title>Ankieta o 7 cudach świata</title>
+</head>
+<body id="tlo-strony">
+    
+<div class="sidebar">
+    <a class="active" href="index.html">Główna</a>
+    <a href="galeria.html">Galeria</a>
+    <a href="informacje.html">7 cudów</a>
+    <a href="formularz.html">Krótki formularz</a>
+</div>
+
+<div class="form-container">
+    <h2>Ankieta o 7 cudach świata</h2>
+    <form action="#" method="post">
+        
+        <fieldset>
+            <legend>Dane osobowe</legend>
+            <label for="imie">Imię:</label>
+            <input type="text" id="imie" name="imie" placeholder="Wpisz swoje imię" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Twoje doświadczenie</legend>
+            <label for="odwiedziles">Czy odwiedziłeś któryś z 7 cudów świata?</label>
+            <select id="odwiedziles" name="odwiedziles">
+                <option value="tak">Tak</option>
+                <option value="nie">Nie</option>
+            </select>
+
+            <label>Który z cudów najbardziej Cię zachwycił?</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="cud" value="Wiszące Ogrody Semiramidy"> Wiszące Ogrody Semiramidy</label>
+                <label><input type="checkbox" name="cud" value="Świątynia Artemidy w Efezie"> Świątynia Artemidy w Efezie</label>
+                <label><input type="checkbox" name="cud" value="Posąg Zeusa w Olimpii"> Posąg Zeusa w Olimpii</label>
+                <label><input type="checkbox" name="cud" value="Mauzoleum w Halikarnasie"> Mauzoleum w Halikarnasie</label>
+                <label><input type="checkbox" name="cud" value="Kolos Rodyjski"> Kolos Rodyjski</label>
+                <label><input type="checkbox" name="cud" value="Latarnia morska na Faros"> Latarnia morska na Faros</label>
+                <label><input type="checkbox" name="cud" value="Piramida Cheopsa"> Piramida Cheopsa</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Ocena</legend>
+            <label>Jak oceniasz znaczenie 7 cudów świata dla dziedzictwa kulturowego?</label>
+            <div class="radio-group">
+                <label><input type="radio" name="ocena" value="Doskonale"> Doskonale</label>
+                <label><input type="radio" name="ocena" value="Dobrze"> Dobrze</label>
+                <label><input type="radio" name="ocena" value="Średnio"> Średnio</label>
+                <label><input type="radio" name="ocena" value="Źle"> Źle</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Twoje uwagi</legend>
+            <label for="uwagi">Twoje uwagi o cudach świata:</label>
+            <textarea id="uwagi" name="uwagi" placeholder="Podziel się swoimi wrażeniami"></textarea>
+        </fieldset>
+
+        <div class="buttons">
+            <button type="submit">Wyślij</button>
+            <button type="reset">Wyczyść</button>
+            <a href="index.html" class="home-button">Strona główna</a>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
